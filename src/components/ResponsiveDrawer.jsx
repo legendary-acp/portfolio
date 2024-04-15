@@ -1,5 +1,4 @@
 import RoundImage from './RoundImage';
-import '../main.css'
 
 import * as React from 'react';
 import Divider from '@mui/material/Divider';
@@ -29,7 +28,7 @@ function ResponsiveDrawer() {
     { name: 'Contact', icon: <MailIcon /> },
   ];
 
-  const profilePhotoURL = "src/assets/profile.jpg"
+  const profilePhotoURL = "profile.jpg"
 
   return (
     <>
@@ -37,12 +36,16 @@ function ResponsiveDrawer() {
       <Divider />
       <List sx={{ display: 'flex', flexDirection: 'column' }}>
         {menuItems.map((item) => (
-          <ListItem key={item.name} disablePadding sx={{ fontSize: { xs: '0.8rem', md: '1rem' }, display: 'flex', alignItems: 'center' }}> {/* Adjust font size conditionally */}
-            <ListItemButton>
-              <ListItemIcon sx={{ fontSize: { xs: '1.5rem', md: '1.8rem' } }}> {/* Adjust icon size conditionally */}
+          <ListItem key={item.name} disablePadding sx={{ }}> 
+            <ListItemButton sx={{
+              '&:hover': {
+                backgroundColor: '#EFBC9B',
+              },
+            }}>
+              <ListItemIcon sx={{fontSize: { md: '1.5rem', lg: '1.8rem' }, display: 'flex', justifyContent: { md: 'center', lg: 'flex-start' } }}> 
                 {item.icon}
               </ListItemIcon>
-              <ListItemText primary={item.name} sx={{ display: { xs: 'none', md: 'block' } }} /> {/* Hide text on small screens */}
+              <ListItemText primary={item.name} sx={{ fontSize: { md: '0.8rem', lg: '1rem' }, display: { sm:'none', xs:'none', md: 'block', lg: 'block' } }} />
             </ListItemButton>
           </ListItem>
         ))}

@@ -12,18 +12,24 @@ const Item = styled(Paper)(({ theme }) => ({
 
 function App() {
   return (
-    <Grid container spacing={1}>
+    <Grid container sx={{ overflow: 'hidden'}}>
       <Grid item xs={2}>
         <Item sx={{
           position: 'absolute',
           top: 0,
           left: 0,
           height: '100vh',
-          width: '15vw'        
+          width: '15vw',  
         }}><ResponsiveDrawer/></Item>
       </Grid>
       <Grid item xs={10}>
-      <Item><Content /></Item>
+      <Item sx={{
+          position: 'absolute',
+          top: 0,
+          right: 0,
+          width: '85vw',      
+          height: '100vh',
+        }}><Content /></Item>
       </Grid>
     </Grid>
   )
