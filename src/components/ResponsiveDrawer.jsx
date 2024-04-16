@@ -31,7 +31,7 @@ function ResponsiveDrawer() {
   const profilePhotoURL = "profile.jpg"
 
   return (
-    <>
+    <div style={{ backgroundColor:'#FFF', height:'100vh', color:'#000'}}>
       <RoundImage src={profilePhotoURL}/>
       <Divider />
       <List sx={{ display: 'flex', flexDirection: 'column' }}>
@@ -39,7 +39,7 @@ function ResponsiveDrawer() {
           <ListItem key={item.name} disablePadding sx={{ }}> 
             <ListItemButton sx={{
               '&:hover': {
-                backgroundColor: '#EFBC9B',
+                backgroundColor: '#d1dbe4',
               },
             }}>
               <ListItemIcon sx={{fontSize: { md: '1.5rem', lg: '1.8rem' }, display: 'flex', justifyContent: { md: 'center', lg: 'flex-start' } }}> 
@@ -50,7 +50,7 @@ function ResponsiveDrawer() {
           </ListItem>
         ))}
       </List>
-    </>
+    </div>
   )
 }
 
