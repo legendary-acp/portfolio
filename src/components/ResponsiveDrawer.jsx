@@ -20,12 +20,12 @@ import SchoolIcon from '@mui/icons-material/School';
 
 function ResponsiveDrawer() {
   const menuItems = [
-    { name: 'About', icon: <PersonOutlineIcon /> },
-    { name: 'Experience', icon: <TrendingUpIcon /> },
-    { name: 'Projects', icon: <FolderCopyIcon /> },
-    { name: 'Skills', icon: <BuildIcon /> },
-    { name: 'Education', icon: <SchoolIcon /> },
-    { name: 'Contact', icon: <MailIcon /> },
+    { name: 'About', icon: <PersonOutlineIcon />, section:'#about' },
+    { name: 'Experience', icon: <TrendingUpIcon />, section:'#about' },
+    { name: 'Projects', icon: <FolderCopyIcon />, section:'#about' },
+    { name: 'Skills', icon: <BuildIcon />, section:'#about' },
+    { name: 'Education', icon: <SchoolIcon />, section:'#about' },
+    { name: 'Contact', icon: <MailIcon />, section:'#contact' },
   ];
 
   const profilePhotoURL = "profile.jpg"
@@ -36,7 +36,7 @@ function ResponsiveDrawer() {
       <Divider />
       <List sx={{ display: 'flex', flexDirection: 'column' }}>
         {menuItems.map((item) => (
-          <ListItem key={item.name} disablePadding sx={{ }}> 
+          <ListItem key={item.name} disablePadding sx={{ }} href={item.section}> 
             <ListItemButton sx={{
               '&:hover': {
                 backgroundColor: '#d1dbe4',
