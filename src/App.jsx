@@ -3,7 +3,7 @@ import ResponsiveDrawer from './components/ResponsiveDrawer'
 import Grid from '@mui/material/Grid';
 import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
-import Content from './components/Content';
+import Content from './components/MainContent';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
