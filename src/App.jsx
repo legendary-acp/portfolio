@@ -19,7 +19,7 @@ function App() {
           top: 0,
           left: 0,
           height: '100vh',
-          width:{sm:'7vw',xs:'7vw', md:'7vw',lg:'15vw'}
+          width:{xs:'12vw',sm:'7vw', md:'7vw',lg:'15vw'}
         }}><SideNav/></Item>
       </Grid>
       <Grid item>
@@ -27,7 +27,7 @@ function App() {
           position: 'absolute',
           top: 0,
           right: 0,
-          width: {sm:'93vw',xs:'93vw', md:'93vw',lg:'85vw'},      
+          width: {xs:'88vw',sm:'93vw', md:'93vw',lg:'85vw'},      
           height: '100vh',
         }}><Content /></Item>
       </Grid>

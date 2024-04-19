@@ -1,5 +1,5 @@
 import { Box } from '@mui/material';
-import Introduction from './Introduction';
+import Introduction from './Home';
 import Contact from './Contact';
 import Education from './Education';
 
