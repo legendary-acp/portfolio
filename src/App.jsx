@@ -1,5 +1,5 @@
 
-import ResponsiveDrawer from './components/ResponsiveDrawer'
+import SideNav from './components/SideNav'
 import Grid from '@mui/material/Grid';
 import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
@@ -13,21 +13,21 @@ const Item = styled(Paper)(({ theme }) => ({
 function App() {
   return (
     <Grid container sx={{ overflow: 'hidden'}}>
-      <Grid item xs={2}>
+      <Grid item>
         <Item sx={{
           position: 'absolute',
           top: 0,
           left: 0,
           height: '100vh',
-          width: '15vw',  
-        }}><ResponsiveDrawer/></Item>
+          width:{sm:'7vw',xs:'7vw', md:'7vw',lg:'15vw'}
+        }}><SideNav/></Item>
       </Grid>
-      <Grid item xs={10}>
+      <Grid item>
       <Item sx={{
           position: 'absolute',
           top: 0,
           right: 0,
-          width: '85vw',      
+          width: {sm:'93vw',xs:'93vw', md:'93vw',lg:'85vw'},      
           height: '100vh',
         }}><Content /></Item>
       </Grid>

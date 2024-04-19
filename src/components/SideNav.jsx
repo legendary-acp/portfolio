@@ -18,7 +18,7 @@ import BuildIcon from '@mui/icons-material/Build';
 import SchoolIcon from '@mui/icons-material/School';
 
 
-function ResponsiveDrawer() {
+function SideNav() {
   const menuItems = [
     { name: 'About', icon: <PersonOutlineIcon />, section:'#about' },
     { name: 'Experience', icon: <TrendingUpIcon />, section:'#about' },
@@ -42,10 +42,10 @@ function ResponsiveDrawer() {
                 backgroundColor: '#d1dbe4',
               },
             }}>
-              <ListItemIcon sx={{fontSize: { md: '1.5rem', lg: '1.8rem' }, display: 'flex', justifyContent: { md: 'center', lg: 'flex-start' } }}> 
+              <ListItemIcon sx={{fontSize: '1.8rem', display: 'flex', justifyContent: { md: 'center', lg: 'flex-start' } }}> 
                 {item.icon}
               </ListItemIcon>
-              <ListItemText primary={item.name} sx={{ fontSize: { md: '0.8rem', lg: '1rem' }, display: { sm:'none', xs:'none', md: 'block', lg: 'block' } }} />
+              <ListItemText primary={item.name} sx={{ fontSize: '1rem', display: { sm:'none', xs:'none', md: 'none', lg: 'block' } }} />
             </ListItemButton>
           </ListItem>
         ))}
@@ -54,4 +54,4 @@ function ResponsiveDrawer() {
   )
 }
 
-export default ResponsiveDrawer;
+export default SideNav;
