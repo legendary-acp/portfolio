@@ -7,7 +7,7 @@ function Introduction(){
     return (
         <Box sx={{ height: '84vh', padding:{xs:'4rem 3rem', sm:'4rem 3rem', md:'5rem 8rem',lg:'5rem 8rem'}, background:'#d1dbe4', color:'#000'}}>
             <Box component="section" sx={{ fontSize: {xs:'2.5rem', sm:'3.5rem', md:'5rem',lg:'5rem'} }}> Hi, I am Pradyuman</Box>
-            <Box sx={{ fontSize: {xs:'1.5rem', sm:'2.5rem', md:'3rem',lg:'3rem'}, display:'flex' ,flexWrap: 'wrap', flexFlow:'row'  }}>
+            <Box sx={{ fontSize: {xs:'1.3rem', sm:'2rem', md:'3rem',lg:'3rem'}, display:'flex' ,flexWrap: 'wrap', flexFlow:'row'  }}>
                 Proficient in{'\u00A0'}
                 <Typewriter 
                     options={{
