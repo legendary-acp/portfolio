@@ -1,8 +1,8 @@
 import {Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineContent, TimelineDot} from '@mui/lab'
 import {School, Book, Backpack} from '@mui/icons-material';
 
-import {DetailsLeft, DetailsRight} from './shared/details';
-import Header from './shared/header';
+import {DetailsLeft, DetailsRight} from './shared/Details';
+import Header from './shared/Header';
 
 export default function Education() {
   return (

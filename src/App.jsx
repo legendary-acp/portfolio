@@ -1,19 +1,13 @@
 
 import SideNav from './components/SideNav'
 import Grid from '@mui/material/Grid';
-import { styled } from '@mui/material/styles';
-import Paper from '@mui/material/Paper';
-import Content from './components/MainContent';
-
-const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-  color: theme.palette.text.secondary,
-}));
+import MainContent from './components/MainContent';
+import {Item} from './components/shared/Item'
 
 function App() {
   return (
-    <Grid container sx={{ overflow: 'hidden'}}>
-      <Grid item>
+    <Grid container>
+      <Grid>
         <Item sx={{
           position: 'absolute',
           top: 0,
@@ -22,14 +16,14 @@ function App() {
           width:{xs:'12vw',sm:'7vw', md:'7vw',lg:'15vw'}
         }}><SideNav/></Item>
       </Grid>
-      <Grid item>
+      <Grid>
       <Item sx={{
           position: 'absolute',
           top: 0,
           right: 0,
           width: {xs:'88vw',sm:'93vw', md:'93vw',lg:'85vw'},      
           height: '100vh',
-        }}><Content /></Item>
+        }}><MainContent /></Item>
       </Grid>
     </Grid>
   )

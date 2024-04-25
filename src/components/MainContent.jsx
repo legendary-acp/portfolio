@@ -6,9 +6,9 @@ import Education from './Education';
 function MainContent(){
     return (
     <Box sx={{ maxHeight: '100vh', overflowY: 'auto' }}>
-        <Introduction id="about"/>
-        <Education />
-        <Contact id="contact"/>
+        <Introduction id="#about"/>
+        <Education id="#education"/>
+        <Contact id="#contact"/>
     </Box>)
 }
 
