@@ -8,33 +8,13 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 
-
-//Icons
-import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
-import MailIcon from '@mui/icons-material/Mail';
-import TrendingUpIcon from '@mui/icons-material/TrendingUp';
-import FolderCopyIcon from '@mui/icons-material/FolderCopy';
-import BuildIcon from '@mui/icons-material/Build';
-import SchoolIcon from '@mui/icons-material/School';
-
-
-function SideNav() {
-  const menuItems = [
-    { name: 'About', icon: <PersonOutlineIcon />, section:'#about' },
-    { name: 'Experience', icon: <TrendingUpIcon />, section:'#experience' },
-    { name: 'Projects', icon: <FolderCopyIcon />, section:'#projects' },
-    { name: 'Skills', icon: <BuildIcon />, section:'#skills' },
-    { name: 'Education', icon: <SchoolIcon />, section:'#education' },
-    { name: 'Contact', icon: <MailIcon />, section:'#contact' },
-  ];
-
+function SideNav({ menuItems }) {
   const profilePhotoURL = "profile.jpg"
-  let scrollToSection = function (section){
-    const element= document.querySelector(section)
-    element?.scrollIntoView({
-      behavior: 'smooth'
-    })
-  }
+  
+  const handleClick = (sectionRef) => {
+    sectionRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div style={{ backgroundColor:'#FFF', height:'100vh', color:'#000'}}>
       <RoundImage src={profilePhotoURL}/>
@@ -46,7 +26,7 @@ function SideNav() {
               '&:hover': {
                 backgroundColor: '#d1dbe4',
               },
-            }} onClick={scrollToSection(item.section)}>
+            }} onClick={() => handleClick(item.section)}>
               <ListItemIcon sx={{fontSize: '1.8rem', display: 'flex', justifyContent: { md: 'center', lg: 'flex-start' } }}> 
                 {item.icon}
               </ListItemIcon>

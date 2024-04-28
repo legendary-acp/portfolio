@@ -1,13 +1,8 @@
 import * as React from 'react';
 import Avatar from '@mui/material/Avatar';
 import Box from '@mui/material/Box';
-import useMediaQuery from '@mui/material/useMediaQuery'; // Import useMediaQuery hook
 
-const RoundImage = ({ src, size = 120, borderWidth = 5, borderColor = '#4a7194' }) => {
-  const isSmallScreen = useMediaQuery('(max-width: 900px)'); // Adjust breakpoint as needed
-
-  const adjustedBorderWidth = isSmallScreen ? 3 : borderWidth; // Adjust border width (optional)
-
+const RoundImage = ({ src }) => {
   return (
     <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: 1 }}>
       <Avatar

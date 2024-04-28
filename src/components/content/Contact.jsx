@@ -1,6 +1,6 @@
 import { Grid, Avatar, Paper } from '@mui/material';
 import { Email, GitHub, LinkedIn } from '@mui/icons-material';
-import { Item } from './shared/Item';
+import { Item } from '../shared/Item';
 
 function LetsGetInTouch(){
     return(
@@ -13,7 +13,7 @@ function LetsGetInTouch(){
 }
 function ContactLinks(){
     return(
-        <div style={{padding:'22rem 1rem 0rem 1rem'}}>
+        <div style={{margin:'22rem 1rem 0rem 1rem'}}>
             <Paper elevation={10} sx={{ padding:'2rem' }} square={false}>
             <a href='https://www.linkedin.com/in/ppradyu/' target='_blank' style={{ display:'flex', alignItems:'center', textDecoration:'none', color:'#000', fontSize:'2rem'}}>
                 <Avatar sx={{backgroundColor:'#fff', color:'#0077B5'}}> 
@@ -37,9 +37,9 @@ function ContactLinks(){
         </div>
     )
 }
-function Contact(){
+function Contact({sectionRef}){
     return (
-        <div style={{ height: '100vh' }}>
+        <div ref={sectionRef} style={{ height: '90vh' }}>
             <Grid container>
                 <Item xs={8}>
                     <LetsGetInTouch />

@@ -1,12 +1,12 @@
 import {Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineContent, TimelineDot} from '@mui/lab'
 import {School, Book, Backpack} from '@mui/icons-material';
 
-import {DetailsLeft, DetailsRight} from './shared/Details';
-import Header from './shared/Header';
+import {DetailsLeft, DetailsRight} from '../shared/Details';
+import Header from '../shared/Header';
 
-export default function Education() {
+export default function Education({sectionRef}) {
   return (
-    <div style={{ height:'100vh'}}>
+    <div ref={sectionRef}  style={{ height:'100vh'}}>
         <Header title='Education'/>
         <div style={{padding:'8rem 10rem 0rem 0rem'}}>
         <Timeline position="alternate">

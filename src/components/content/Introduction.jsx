@@ -3,8 +3,9 @@ import Typewriter from 'typewriter-effect';
 import { GitHub, InsertDriveFile, LinkedIn } from '@mui/icons-material';
 
 
-function Introduction(){
+function Introduction({sectionRef}){
     return (
+        <div ref={sectionRef}>
         <Box sx={{ height: '84vh', padding:{xs:'4rem 3rem', sm:'4rem 3rem', md:'5rem 8rem',lg:'5rem 8rem'}, background:'#d1dbe4', color:'#000'}}>
             <Box component="section" sx={{ fontSize: {xs:'2.5rem', sm:'3.5rem', md:'5rem',lg:'5rem'} }}> Hi, I am Pradyuman</Box>
             <Box sx={{ fontSize: {xs:'1.3rem', sm:'2rem', md:'3rem',lg:'3rem'}, display:'flex' ,flexWrap: 'wrap', flexFlow:'row'  }}>
@@ -28,6 +29,7 @@ function Introduction(){
                 <a href='Resume.pdf' target='_blank'><Avatar  sx={{margin:'0.5rem', background: '#008080'}}> <InsertDriveFile/> </Avatar> </a>
             </Box>
         </Box>
+        </div>
     )
 }
 
