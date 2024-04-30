@@ -1,5 +1,5 @@
 
-import SideNav from './components/sideNav/SideNav'
+import SideNav from './components/SideNav'
 import Grid from '@mui/material/Grid';
 import Main from './components/content/Index';
 import {Item} from './components/shared/Item'

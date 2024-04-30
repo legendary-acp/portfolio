@@ -1,4 +1,4 @@
-import RoundImage from './RoundImage';
+import RoundImage  from './shared/RoundImage';
 
 import * as React from 'react';
 import Divider from '@mui/material/Divider';
