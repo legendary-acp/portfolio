@@ -1,23 +1,20 @@
-import * as React from 'react';
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
-import TimelineContent, {timelineContentClasses} from '@mui/lab/TimelineContent';
+import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import Typography from '@mui/material/Typography';
-import { Box, Grid, colors } from '@mui/material';
-import { Item } from '../shared/Item';
+import { Box, Grid } from '@mui/material';
 import CompanyLogo from '../shared/CompanyLogo';
 import Header from '../shared/Header';
 
 function ExperienceYears(){
     return(
-        <div style={{ padding:'3rem 2rem 3rem 5rem', width:'50vw', color:'#FFF', background:'#020202', boxShadow:" -1px 1px #77aaff -2px 2px #77aaff -3px 3px #77aaff -4px 4px #77aaff -5px 5px #77aaff" }}>
-            <div style={{ fontSize:'5rem', margin:'1rem 0rem', textShadow: '2px 2px 4px rgba(225,225,225,5)'}}>LETS</div>
-            <div style={{ fontSize:'6rem', textAlign:'right',  margin:'1rem 0rem', textShadow: '2px 2px 4px rgba(225,225,225,5)'}}>GET IN</div>
-            <div style={{ fontSize:'7rem', margin:'1rem 0rem', textShadow: '2px 2px 4px rgba(225,225,225,5)'}}>TOUCH</div>
+        <div style={{ height:'100%',  padding:'10rem 2rem 3rem 5rem'}}>
+            <div style={{ fontSize:'4rem',  margin:'2rem 0rem' }}>More than 3 year as</div>
+            <div style={{ fontSize:'4rem', margin:'2rem 0rem', fontWeight:'700', color:'#000000'}}>Software Engineer</div>
         </div>
     )
 }
@@ -26,20 +23,17 @@ function ExperienceTimeline(){
     const middlewareLogo = 'middlewareLogo.png'
     const ctrlbLogo = 'ctrlbLogo.jpg'
     return(
-        <div style={{margin:'0rem 5rem'}}>
-            <Timeline position="alternate">
+        <Timeline position="alternate-reverse" sx={{ height:'100%', paddingTop:'5rem'}}>
             <TimelineItem>
                 <TimelineOppositeContent
                 sx={{ m: 'auto 0' }}
-                align="right"
                 variant="body"
-                color="text.secondary"
                 >
                 June 2021 - Sept 2023
                 </TimelineOppositeContent>
                 <TimelineSeparator>
                 <TimelineConnector />
-                <TimelineDot sx={{backgroundColor:'white', border:'0.1rem solid #000'}}>
+                <TimelineDot sx={{backgroundColor:'white', border:'0.2rem solid #000'}}>
                     <CompanyLogo src={gapLogo}/>
                 </TimelineDot>
                 <TimelineConnector />
@@ -54,14 +48,13 @@ function ExperienceTimeline(){
             <TimelineItem> 
                 <TimelineOppositeContent
                 sx={{ m: 'auto 0' }}
-                variant="body2"
-                color="text.secondary"
+                variant="body"
                 >
                 Sept 2023 - Feb 2024
                 </TimelineOppositeContent>
                 <TimelineSeparator>
                 <TimelineConnector />
-                <TimelineDot sx={{backgroundColor:'white', border:'0.1rem solid #f05c5c'}}>
+                <TimelineDot sx={{backgroundColor:'white', border:'0.2rem solid #f05c5c'}}>
                 <CompanyLogo src={middlewareLogo}/>
                 </TimelineDot>
                 <TimelineConnector />
@@ -76,17 +69,14 @@ function ExperienceTimeline(){
             <TimelineItem>
                 <TimelineOppositeContent
                     sx={{ m: 'auto 0' }}
-                    variant="body2"
-                    color="text.secondary"
+                    variant="body"
                 >
                 April 2024 - Present 
                 </TimelineOppositeContent>
                 <TimelineSeparator>
-                <TimelineConnector />
-                <TimelineDot color="primary" variant="outline">
+                <TimelineDot sx={{backgroundColor:'white', border:'0.2rem solid #4D5BE9'}}>
                 <CompanyLogo src={ctrlbLogo}/>
                 </TimelineDot>
-                <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
                 </TimelineSeparator>
                 <TimelineContent sx={{ py: '12px', px: 2 }}>
                 <Typography variant="h6" component="span">
@@ -95,21 +85,20 @@ function ExperienceTimeline(){
                 <Typography>Sr Software Engineer</Typography>
                 </TimelineContent>
             </TimelineItem>
-            </Timeline>
-        </div>
+        </Timeline>
     )
 }
 export default function Experience({sectionRef}){
     return (
         <div ref={sectionRef} style={{ height: '100vh' }}>
-            <Header title='Experience'/>
-            <Box sx={{ flexGrow:1, height:'90vh'}}>
+            <Header title='EXPERIENCE'/>
+            <Box sx={{  height:'90vh', backgroundColor:'#ffffff'}}>
                 <Grid container>
-                    <Grid xs={6}>
-                        <Item > <ExperienceYears /> </Item>
+                <Grid xs={6}>
+                        <ExperienceYears />
                     </Grid>
                     <Grid xs={6}>
-                        <Item > <ExperienceTimeline /> </Item>
+                        <ExperienceTimeline />
                     </Grid>
                 </Grid>
             </Box>

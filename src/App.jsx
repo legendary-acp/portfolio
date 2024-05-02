@@ -2,7 +2,6 @@
 import SideNav from './components/SideNav'
 import Grid from '@mui/material/Grid';
 import Main from './components/content/Index';
-import {Item} from './components/shared/Item'
 import { useRef } from 'react';
 
 //Icons
@@ -25,25 +24,23 @@ function App() {
 
   return (
     <Grid container>
-      <Grid>
-        <Item sx={{
+      <Grid sx={{
           position: 'absolute',
           top: 0,
           left: 0,
           height: '100vh',
           width:{xs:'12vw',sm:'7vw', md:'7vw',lg:'15vw'}
-        }}><SideNav menuItems={menuItems}/></Item>
+        }}><SideNav menuItems={menuItems}/>
       </Grid>
-      <Grid>
-      <Item sx={{
+      <Grid sx={{
           position: 'absolute',
           top: 0,
           right: 0,
           width: {xs:'88vw',sm:'93vw', md:'93vw',lg:'85vw'},      
           height: '100vh',
-        }}><Main menuItems={menuItems}/></Item>
+        }}><Main menuItems={menuItems}/>
+        </Grid>
       </Grid>
-    </Grid>
   )
 }
 

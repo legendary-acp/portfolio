@@ -1,6 +1,5 @@
 import { Grid, Avatar, Paper } from '@mui/material';
 import { Email, GitHub, LinkedIn } from '@mui/icons-material';
-import { Item } from '../shared/Item';
 
 function LetsGetInTouch(){
     return(
@@ -13,21 +12,21 @@ function LetsGetInTouch(){
 }
 function ContactLinks(){
     return(
-        <div style={{margin:'22rem 1rem 0rem 1rem'}}>
+        <div style={{margin:'18rem 1rem 0rem 1rem'}}>
             <Paper elevation={10} sx={{ padding:'2rem' }} square={false}>
-            <a href='https://www.linkedin.com/in/ppradyu/' target='_blank' style={{ display:'flex', alignItems:'center', textDecoration:'none', color:'#000', fontSize:'2rem'}}>
+            <a href='https://www.linkedin.com/in/ppradyu/' target='_blank' style={{ display:'flex', alignItems:'center', textDecoration:'none', color:'#000', fontSize:'1.5rem'}}>
                 <Avatar sx={{backgroundColor:'#fff', color:'#0077B5'}}> 
                     <LinkedIn fontSize='large'/> 
                 </Avatar> 
                 Pradyuman
             </a>
-            <a href='https://github.com/legendary-acp' target='_blank' style={{ margin:'3rem 0rem', display:'flex', alignItems:'center', textDecoration:'none', color:'#000', fontSize:'2rem'}}>
+            <a href='https://github.com/legendary-acp' target='_blank' style={{ margin:'3rem 0rem', display:'flex', alignItems:'center', textDecoration:'none', color:'#000', fontSize:'1.5rem'}}>
                 <Avatar sx={{backgroundColor:'#fff', color:'#000'}}> 
                     <GitHub fontSize='large'/> 
                 </Avatar> 
                 legendary-acp
             </a>
-            <a href='mailto:meetupradyuman@gmail.com' target='_blank' style={{ display:'flex', alignItems:'center', textDecoration:'none', color:'#000', fontSize:'2rem'}}>
+            <a href='mailto:meetupradyuman@gmail.com' target='_blank' style={{ display:'flex', alignItems:'center', textDecoration:'none', color:'#000', fontSize:'1.5rem'}}>
                 <Avatar sx={{backgroundColor:'#fff', color:'#000'}}> 
                     <Email fontSize='large'/> 
                 </Avatar> 
@@ -41,15 +40,14 @@ function Contact({sectionRef}){
     return (
         <div ref={sectionRef} style={{ height: '90vh' }}>
             <Grid container>
-                <Item xs={8}>
+                <Grid xs={8}>
                     <LetsGetInTouch />
-                </Item>
-                <Item xs={4}>
+                </Grid>
+                <Grid xs={4}>
                     <ContactLinks />
-                </Item>
+                </Grid>
             </Grid>
         </div>
     )
 }
-
 export default Contact

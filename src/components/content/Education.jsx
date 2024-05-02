@@ -7,8 +7,8 @@ import Header from '../shared/Header';
 export default function Education({sectionRef}) {
   return (
     <div ref={sectionRef}  style={{ height:'100vh'}}>
-        <Header title='Education'/>
-        <div style={{padding:'8rem 10rem 0rem 0rem'}}>
+        <Header title='EDUCATION'/>
+        <div style={{padding:'5rem 0rem 0rem 0rem'}}>
         <Timeline position="alternate">
             <TimelineItem>
                 <TimelineSeparator>
