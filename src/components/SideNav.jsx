@@ -19,7 +19,7 @@ function SideNav({ menuItems }) {
   };
 
   return (
-    <div style={{ backgroundColor: "#FFF", height: "100vh", color: "#000" }}>
+    <div style={{ backgroundColor: "#d1dbe4", height: "100vh", color: "#000", boxShadow:"5px 5px 10px rgba(225,225,225,5)"}}>
       <RoundImage src={profilePhotoURL} />
       <Divider />
       <List sx={{ display: "flex", flexDirection: "column" }}>
