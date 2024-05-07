@@ -7,10 +7,9 @@ import {
   TimelineOppositeContent,
   TimelineDot,
 } from "@mui/lab";
-import Typography from "@mui/material/Typography";
-import { Box, Grid } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 
-import {CompanyLogo} from "../shared/CompanyLogo";
+import { CompanyLogo } from "../shared/CompanyLogo";
 import Header from "../shared/Header";
 
 import PropTypes from "prop-types";
@@ -35,9 +34,6 @@ function ExperienceYears() {
   );
 }
 function ExperienceTimeline() {
-  const gapLogo = "gapLogo.png";
-  const middlewareLogo = "middlewareLogo.png";
-  const ctrlbLogo = "ctrlbLogo.jpg";
   return (
     <Timeline
       position="alternate-reverse"
@@ -45,42 +41,42 @@ function ExperienceTimeline() {
     >
       <TimelineItem>
         <TimelineOppositeContent sx={{ m: "auto 0" }} variant="body">
-          June 2021 - Sept 2023
+          {companies[0].duration}
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector />
           <TimelineDot
-            sx={{ backgroundColor: "white", border: "0.2rem solid #000" }}
+            sx={{ backgroundColor: "white", border: `${companies[0].border}` }}
           >
-            <CompanyLogo src={gapLogo} />
+            <CompanyLogo src={companies[0].logoURL} />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent sx={{ py: "12px", px: 2 }}>
           <Typography variant="h6" component="span">
-            Gap Inc.
+            {companies[0].name}
           </Typography>
-          <Typography>Software Engineer</Typography>
+          <Typography>{companies[0].position}</Typography>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
         <TimelineOppositeContent sx={{ m: "auto 0" }} variant="body">
-          Sept 2023 - Feb 2024
+          {companies[1].duration}
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector />
           <TimelineDot
-            sx={{ backgroundColor: "white", border: "0.2rem solid #f05c5c" }}
+            sx={{ backgroundColor: "white", border: `${companies[1].border}` }}
           >
-            <CompanyLogo src={middlewareLogo} />
+            <CompanyLogo src={companies[1].logoURL} />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent sx={{ py: "5rem", px: 2 }}>
           <Typography variant="h6" component="span">
-            Middleware
+            {companies[1].name}
           </Typography>
-          <Typography>Sr Software Engineer</Typography>
+          <Typography>{companies[1].title}</Typography>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
@@ -89,16 +85,16 @@ function ExperienceTimeline() {
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot
-            sx={{ backgroundColor: "white", border: "0.2rem solid #4D5BE9" }}
+            sx={{ backgroundColor: "white", border: `${companies[2].border}` }}
           >
-            <CompanyLogo src={ctrlbLogo} />
+            <CompanyLogo src={companies[2].logoURL} />
           </TimelineDot>
         </TimelineSeparator>
         <TimelineContent sx={{ py: "12px", px: 2 }}>
           <Typography variant="h6" component="span">
-            CtrlB
+            {companies[2].name}
           </Typography>
-          <Typography>Sr Software Engineer</Typography>
+          <Typography>{companies[2].duration}</Typography>
         </TimelineContent>
       </TimelineItem>
     </Timeline>
@@ -125,3 +121,27 @@ export default function Experience({ sectionRef }) {
 Experience.propTypes = {
   sectionRef: PropTypes.object.isRequired,
 };
+
+const companies = [
+  {
+    name: "Gap Inc",
+    logoURL: "companies/gapLogo.png",
+    position: "Software Engineer",
+    duration: "June 2021 - Sept 2023",
+    border: "0.2rem solid #000",
+  },
+  {
+    name: "Middleware",
+    logoURL: "companies/middlewareLogo.png",
+    position: "Senior Software Engineer",
+    duration: "Sept 2023 - Feb 2024",
+    border: "0.2rem solid #f05c5c",
+  },
+  {
+    name: "CtrlB",
+    logoURL: "companies/ctrlbLogo.jpg",
+    position: "Senior Software Engineer",
+    duration: "April 2024 - Present",
+    border: "0.2rem solid #4D5BE9",
+  },
+];

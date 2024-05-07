@@ -1,5 +1,5 @@
 import SideNav from "./components/SideNav";
-import Main from "./components/content/Index";
+import Main from "./components/Index";
 import {useRef} from "react";
 
 import Grid from "@mui/material/Grid";

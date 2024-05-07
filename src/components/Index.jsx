@@ -1,15 +1,19 @@
 import Box from "@mui/material/Box";
-import Introduction from "./Introduction";
-import Contact from "./Contact";
-import Education from "./Education";
-import Experience from "./Experience";
+
 import PropTypes from "prop-types";
+
+import Introduction from "./content/Introduction";
+import Contact from "./content/Contact";
+import Education from "./content/Education";
+import Experience from "./content/Experience";
+import Skills from "./content/Skills";
 
 export default function Main({ menuItems }) {
   return (
     <Box sx={{ maxHeight: "100vh", overflowY: "auto" }}>
       <Introduction sectionRef={menuItems[0].section} />
       <Experience sectionRef={menuItems[1].section} />
+      <Skills sectionRef={menuItems[2].section} />
       <Education sectionRef={menuItems[4].section} />
       <Contact sectionRef={menuItems[5].section} />
     </Box>
