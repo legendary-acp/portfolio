@@ -13,7 +13,7 @@ export default function Main({ menuItems }) {
     <Box sx={{ maxHeight: "100vh", overflowY: "auto" }}>
       <Introduction sectionRef={menuItems[0].section} />
       <Experience sectionRef={menuItems[1].section} />
-      <Skills sectionRef={menuItems[2].section} />
+      <Skills sectionRef={menuItems[3].section} />
       <Education sectionRef={menuItems[4].section} />
       <Contact sectionRef={menuItems[5].section} />
     </Box>
