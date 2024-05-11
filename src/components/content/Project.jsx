@@ -7,23 +7,35 @@ import { GitHub } from "@mui/icons-material";
 
 export function ProjectDetails({ project }) {
   return (
-    <div style={{ width: "24vw", height: "50vh" }}>
-      <Paper elevation={9} sx={{ padding: "1rem" }}>
-        <img src={project.imageUrl} width={"100%"} />
-        <div
-          style={{ display: 'flex', flexWrap: 'wrap', marginTop: '1rem' }}
-        >
-          {" "}
-          {project.tags.slice(0, 3).map((tag, index) => (
-            <Chip key={index} color="info" sx={{ width: "20%", margin:'1%' }} label={tag} />
-          ))}
-        </div>
-        <Typography gutterBottom variant="h5" component="div" style={{margin:'5% 0%'}}>
-          {project.name}
-        </Typography>
-        <Typography variant="body2" color="text.secondary" style={{margin:'5% 0%'}}>
-          {project.description}
-        </Typography>
+    <Paper elevation={9} sx={{ padding: "1rem", width: "22vw", height: "70vh" }}>
+      <img src={project.imageUrl} width={"100%"} />
+      <div style={{ display: "flex", flexWrap: "wrap", marginTop: "1rem" }}>
+        {" "}
+        {project.tags.slice(0, 3).map((tag, index) => (
+          <Chip
+            key={index}
+            color="info"
+            sx={{ maxwidth: "30%", margin: "1%" }}
+            label={tag}
+          />
+        ))}
+      </div>
+      <Typography
+        gutterBottom
+        variant="h5"
+        component="div"
+        style={{ margin: "5% 0%" }}
+      >
+        {project.name}
+      </Typography>
+      <Typography
+        variant="body2"
+        color="text.secondary"
+        style={{ margin: "5% 0%" }}
+      >
+        {project.description}
+      </Typography>
+      {project.githubUrl && (
         <Grid container justifyContent="flex-end">
           <Grid item>
             <Button
@@ -36,44 +48,47 @@ export function ProjectDetails({ project }) {
             </Button>
           </Grid>
         </Grid>
-      </Paper>
-    </div>
+      )}
+    </Paper>
   );
 }
 
 export default function Project({ sectionRef }) {
   const projects = [
     {
-      name: "Project 1",
-      description: "Description of Project 1",
-      imageUrl: "img/project1.jpg",
-      tags: ["Tag1", "Tag2", "Tag3"],
-      githubUrl: "https://github.com/username/project1",
+      name: "Restaurant Management System",
+      description:
+        "Backend project written in go. Can handle tasks related to orders, menue management, table management etc for a restaurant.",
+      imageUrl: "img/projects/restaurant-management-system.png",
+      tags: ["Go", "Backend"],
+      githubUrl:
+        "https://github.com/legendary-acp/restaurant-management-system/",
     },
     {
-      name: "Project 2",
-      description: "Description of Project 2",
-      imageUrl: "img/project2.jpg",
-      tags: ["Tag4", "Tag5", "Tag6"],
-      githubUrl: "https://github.com/username/project2",
+      name: "Kubernetes Monitoring Agent",
+      description:
+        "Redesigned Kuberenetes agent for middleware including new deployment which increased scope of what can be done through this agent.",
+      imageUrl: "img/projects/kuberenetes-agent.png",
+      tags: ["Kubernetes", "Helm"],
+      githubUrl: "https://github.com/middleware-labs/mw-agent",
     },
     {
-      name: "Project 3",
-      description: "Description of Project 3",
-      imageUrl: "img/project3.jpg",
-      tags: ["Tag7", "Tag8", "Tag9"],
-      githubUrl: "https://github.com/username/project3",
+      name: "RHEL -> OEL migration",
+      description: "Executed comprehensive testing and validation procedures to mitigate potential risks, resulting in a seamless transition without compromising system stability or performance",
+      imageUrl: "img/projects/rhel_to_oel.png",
+      tags: ["Linux", "RHEL", "OEL"],
+      githubUrl: "",
     },
   ];
 
   return (
-    <div ref={sectionRef} style={{maxHeight:'100vh'}}>
+    <div ref={sectionRef} style={{ maxHeight: "100vh" }}>
       <Header title="PROJECTS"></Header>
       <div
         style={{
           width: "100%",
           height: "90vh",
-          padding: "5rem"
+          padding: "1rem 5rem",
         }}
       >
         <Grid container spacing={3}>
