@@ -7,12 +7,14 @@ import Contact from "./content/Contact";
 import Education from "./content/Education";
 import Experience from "./content/Experience";
 import Skills from "./content/Skills";
+import Project from "./content/Project";
 
 export default function Main({ menuItems }) {
   return (
     <Box sx={{ maxHeight: "100vh", overflowY: "auto" }}>
       <Introduction sectionRef={menuItems[0].section} />
       <Experience sectionRef={menuItems[1].section} />
+      <Project sectionRef={menuItems[2].section} />
       <Skills sectionRef={menuItems[3].section} />
       <Education sectionRef={menuItems[4].section} />
       <Contact sectionRef={menuItems[5].section} />

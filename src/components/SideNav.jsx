@@ -12,7 +12,6 @@ import {
 import PropTypes from "prop-types";
 
 function SideNav({ menuItems }) {
-  const profilePhotoURL = "profile.jpg";
 
   const handleClick = (sectionRef) => {
     sectionRef.current.scrollIntoView({ behavior: "smooth" });
@@ -20,7 +19,7 @@ function SideNav({ menuItems }) {
 
   return (
     <div style={{ backgroundColor: "#d1dbe4", height: "100vh", color: "#000", boxShadow:"5px 5px 10px rgba(225,225,225,5)"}}>
-      <RoundImage src={profilePhotoURL} />
+      <RoundImage src={"img/profile.jpg"} />
       <Divider />
       <List sx={{ display: "flex", flexDirection: "column" }}>
         {menuItems.map((item) => (
