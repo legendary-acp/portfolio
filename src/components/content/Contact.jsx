@@ -3,6 +3,10 @@ import { Email, GitHub, LinkedIn } from "@mui/icons-material";
 
 import PropTypes from "prop-types";
 
+/*
+TODO: Create a form page and send its data to firebase using react function
+*/
+
 function LetsGetInTouch() {
   return (
     <div
