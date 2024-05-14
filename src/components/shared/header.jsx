@@ -5,10 +5,10 @@ export default function Header({title}) {
     <header
       style={{
         height: "10vh",
-        backgroundColor: "#476f95",
-        padding: "3rem 0rem 0rem 3rem",
+        backgroundColor: "#002379",
+        padding: "2rem 2rem",
         fontSize: "5rem",
-        color: "#FFF",
+        color: "#FFFAE6",
       }}
     >
       {title}

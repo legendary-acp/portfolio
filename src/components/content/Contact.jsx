@@ -12,8 +12,8 @@ function LetsGetInTouch() {
     <div
       style={{
         padding: "3rem 2rem 3rem 5rem",
-        color: "#FFF",
-        background: "#020202",
+        color: "#FFFAE6",
+        background: "#002379",
         boxShadow:
           " -1px 1px #77aaff -2px 2px #77aaff -3px 3px #77aaff -4px 4px #77aaff -5px 5px #77aaff",
       }}
@@ -108,7 +108,7 @@ function ContactLinks() {
 }
 export default function Contact({ sectionRef }) {
   return (
-    <div ref={sectionRef} style={{ height: "90vh" }}>
+    <div ref={sectionRef} style={{ height: "100vh", backgroundColor:'#FFFAE6' }}>
       <Grid container>
         <Grid xs={8}>
           <LetsGetInTouch />

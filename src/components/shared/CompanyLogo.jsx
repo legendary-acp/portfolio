@@ -15,7 +15,6 @@ export const CompanyLogo = ({ src }) => {
       }}
     >
       <Avatar
-        alt={name}
         src={src}
         sx={{
           width: { sm: "2vw", xs: "2vw", md: "2vw", lg: "3vw" },

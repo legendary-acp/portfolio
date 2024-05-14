@@ -16,8 +16,8 @@ export default function Introduction({ sectionRef }) {
             md: "5rem 8rem",
             lg: "5rem 8rem",
           },
-          background: "#fff",
-          color: "#000",
+          background: "#FFFAE6",
+          color: "#151515",
         }}
       >
         <Box

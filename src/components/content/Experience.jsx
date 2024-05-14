@@ -46,7 +46,7 @@ function ExperienceTimeline() {
         <TimelineSeparator>
           <TimelineConnector />
           <TimelineDot
-            sx={{ backgroundColor: "white", border: `${companies[0].border}` }}
+            sx={{ backgroundColor: "#FFFAE6", border: `${companies[0].border}` }}
           >
             <CompanyLogo src={companies[2].logoURL} />
           </TimelineDot>
@@ -66,7 +66,7 @@ function ExperienceTimeline() {
         <TimelineSeparator>
           <TimelineConnector />
           <TimelineDot
-            sx={{ backgroundColor: "white", border: `${companies[1].border}` }}
+            sx={{ backgroundColor: "#FFFAE6", border: `${companies[1].border}` }}
           >
             <CompanyLogo src={companies[1].logoURL} />
           </TimelineDot>
@@ -85,7 +85,7 @@ function ExperienceTimeline() {
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot
-            sx={{ backgroundColor: "white", border: `${companies[2].border}` }}
+            sx={{ backgroundColor: "#FFFAE6", border: `${companies[2].border}` }}
           >
             <CompanyLogo src={companies[0].logoURL} />
           </TimelineDot>
@@ -102,9 +102,9 @@ function ExperienceTimeline() {
 }
 export default function Experience({ sectionRef }) {
   return (
-    <div ref={sectionRef} style={{ height: "100vh" }}>
+    <div ref={sectionRef} style={{ height: "100vh"}}>
       <Header title="EXPERIENCE" />
-      <Box sx={{ height: "90vh", backgroundColor: "#ffffff" }}>
+      <Box sx={{ height: "90vh", backgroundColor:'#FFFAE6' }}>
         <Grid container>
           <Grid xs={6}>
             <ExperienceYears />
@@ -128,7 +128,7 @@ const companies = [
     logoURL: "img/companies/gapLogo.png",
     position: "Software Engineer",
     duration: "June 2021 - Sept 2023",
-    border: "0.2rem solid #000",
+    border: "0.2rem solid #15B19A",
     link: "https://www.gapinc.com",
   },
   {
@@ -141,10 +141,10 @@ const companies = [
   },
   {
     name: "CtrlB",
-    logoURL: "img/companies/ctrlbLogo.jpg",
+    logoURL: "img/companies/ctrlbLogo.png",
     position: "Senior Software Engineer",
     duration: "April 2024 - Present",
-    border: "0.2rem solid #4D5BE9",
+    border: "0.2rem solid #000000",
     link: "https://ctrlb.ai/",
   },
 ];

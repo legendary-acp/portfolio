@@ -15,9 +15,9 @@ import PropTypes from "prop-types";
 
 export default function Education({ sectionRef }) {
   return (
-    <div ref={sectionRef} style={{ height: "100vh" }}>
+    <div ref={sectionRef} style={{ height: "100vh" , backgroundColor:'#FFFAE6'}}>
       <Header title="EDUCATION" />
-      <div style={{ padding: "5rem 0rem 0rem 0rem" }}>
+      <div style={{ padding: "5rem 0rem 0rem 0rem"}}>
         <Timeline position="alternate">
           <TimelineItem>
             <TimelineSeparator>

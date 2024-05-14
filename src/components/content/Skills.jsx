@@ -1,4 +1,4 @@
-import { ImageList, ImageListItem, Paper, Divider,Typography } from "@mui/material";
+import { ImageList, ImageListItem, Paper,Typography } from "@mui/material";
 
 import Header from "../shared/Header";
 
@@ -6,11 +6,10 @@ import PropTypes from "prop-types";
 
 export default function Skills({ sectionRef }) {
   return (
-    <div ref={sectionRef} style={{ width:'100%', height:'100vh' }}>
+    <div ref={sectionRef} style={{ width:'100%', height:'100vh', backgroundColor:'#FFFAE6' }}>
       <Header title="SKILLS"/>
         <Paper elevation={8} sx={{margin:'2rem'}}>    
-        <Typography sx={{ paddingLeft:'2rem', paddingTop:'2rem' }} variant="h3">Languages</Typography>
-          <Divider/>
+        <Typography sx={{ paddingLeft:'2rem', paddingTop:'2rem' , backgroundColor:'#FF9F66', color:'#FFFAE6'}} variant="h3">Languages</Typography>
           <ImageList variant="masonry" cols={5} sx={{ padding: '2rem' }}>
               {languageImg.map((lang) => (
                 <ImageListItem key={lang.img}>
@@ -26,8 +25,7 @@ export default function Skills({ sectionRef }) {
             </ImageList>
         </Paper>
         <Paper elevation={8} sx={{margin:'2rem'}}>    
-        <Typography sx={{ paddingLeft:'2rem', paddingTop:'2rem' }} variant="h3">Tools</Typography>
-          <Divider/>
+        <Typography sx={{ paddingLeft:'2rem', paddingTop:'2rem' , backgroundColor:'#FF9F66', color:'#FFFAE6'}} variant="h3">Tools</Typography>
           <ImageList variant="masonry" cols={7} sx={{ padding: '2rem' }}>
               {toolsImg.map((tool) => (
                 <ImageListItem key={tool.img}>

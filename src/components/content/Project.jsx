@@ -7,7 +7,10 @@ import { GitHub } from "@mui/icons-material";
 
 export function ProjectDetails({ project }) {
   return (
-    <Paper elevation={9} sx={{ padding: "1rem", width: "22vw", height: "70vh" }}>
+    <Paper
+      elevation={9}
+      sx={{ padding: "1rem", width: "22vw", height: "70vh" }}
+    >
       <img src={project.imageUrl} width={"100%"} />
       <div style={{ display: "flex", flexWrap: "wrap", marginTop: "1rem" }}>
         {" "}
@@ -74,7 +77,8 @@ export default function Project({ sectionRef }) {
     },
     {
       name: "RHEL -> OEL migration",
-      description: "Executed comprehensive testing and validation procedures to mitigate potential risks, resulting in a seamless transition without compromising system stability or performance",
+      description:
+        "Executed comprehensive testing and validation procedures to mitigate potential risks, resulting in a seamless transition without compromising system stability or performance",
       imageUrl: "img/projects/rhel_to_oel.png",
       tags: ["Linux", "RHEL", "OEL"],
       githubUrl: "",
@@ -82,13 +86,13 @@ export default function Project({ sectionRef }) {
   ];
 
   return (
-    <div ref={sectionRef} style={{ maxHeight: "100vh", width:"100%" }}>
+    <div ref={sectionRef} style={{ height: "100vh"}}>
       <Header title="PROJECTS"></Header>
       <div
         style={{
-          width: "100%",
           height: "90vh",
           padding: "1rem 3rem",
+          backgroundColor: "#FFFAE6",
         }}
       >
         <Grid container spacing={3}>
