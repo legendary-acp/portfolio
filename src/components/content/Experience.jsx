@@ -129,6 +129,7 @@ const companies = [
     position: "Software Engineer",
     duration: "June 2021 - Sept 2023",
     border: "0.2rem solid #000",
+    link: "https://www.gapinc.com",
   },
   {
     name: "Middleware",
@@ -136,6 +137,7 @@ const companies = [
     position: "Senior Software Engineer",
     duration: "Sept 2023 - Feb 2024",
     border: "0.2rem solid #f05c5c",
+    link: "https://middleware.io/",
   },
   {
     name: "CtrlB",
@@ -143,5 +145,6 @@ const companies = [
     position: "Senior Software Engineer",
     duration: "April 2024 - Present",
     border: "0.2rem solid #4D5BE9",
+    link: "https://ctrlb.ai/",
   },
 ];
