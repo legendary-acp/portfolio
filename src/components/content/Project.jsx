@@ -82,13 +82,13 @@ export default function Project({ sectionRef }) {
   ];
 
   return (
-    <div ref={sectionRef} style={{ maxHeight: "100vh" }}>
+    <div ref={sectionRef} style={{ maxHeight: "100vh", width:"100%" }}>
       <Header title="PROJECTS"></Header>
       <div
         style={{
           width: "100%",
           height: "90vh",
-          padding: "1rem 5rem",
+          padding: "1rem 3rem",
         }}
       >
         <Grid container spacing={3}>

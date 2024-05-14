@@ -41,22 +41,22 @@ function ExperienceTimeline() {
     >
       <TimelineItem>
         <TimelineOppositeContent sx={{ m: "auto 0" }} variant="body">
-          {companies[0].duration}
+          {companies[2].duration}
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector />
           <TimelineDot
             sx={{ backgroundColor: "white", border: `${companies[0].border}` }}
           >
-            <CompanyLogo src={companies[0].logoURL} />
+            <CompanyLogo src={companies[2].logoURL} />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent sx={{ py: "12px", px: 2 }}>
           <Typography variant="h6" component="span">
-            {companies[0].name}
+            {companies[2].name}
           </Typography>
-          <Typography>{companies[0].position}</Typography>
+          <Typography>{companies[2].position}</Typography>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
@@ -76,25 +76,25 @@ function ExperienceTimeline() {
           <Typography variant="h6" component="span">
             {companies[1].name}
           </Typography>
-          <Typography>{companies[1].title}</Typography>
+          <Typography>{companies[1].position}</Typography>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
         <TimelineOppositeContent sx={{ m: "auto 0" }} variant="body">
-          April 2024 - Present
+          {companies[0].duration}
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot
             sx={{ backgroundColor: "white", border: `${companies[2].border}` }}
           >
-            <CompanyLogo src={companies[2].logoURL} />
+            <CompanyLogo src={companies[0].logoURL} />
           </TimelineDot>
         </TimelineSeparator>
         <TimelineContent sx={{ py: "12px", px: 2 }}>
           <Typography variant="h6" component="span">
-            {companies[2].name}
+            {companies[0].name}
           </Typography>
-          <Typography>{companies[2].duration}</Typography>
+          <Typography>{companies[0].position}</Typography>
         </TimelineContent>
       </TimelineItem>
     </Timeline>
@@ -125,21 +125,21 @@ Experience.propTypes = {
 const companies = [
   {
     name: "Gap Inc",
-    logoURL: "companies/gapLogo.png",
+    logoURL: "img/companies/gapLogo.png",
     position: "Software Engineer",
     duration: "June 2021 - Sept 2023",
     border: "0.2rem solid #000",
   },
   {
     name: "Middleware",
-    logoURL: "companies/middlewareLogo.png",
+    logoURL: "img/companies/middlewareLogo.png",
     position: "Senior Software Engineer",
     duration: "Sept 2023 - Feb 2024",
     border: "0.2rem solid #f05c5c",
   },
   {
     name: "CtrlB",
-    logoURL: "companies/ctrlbLogo.jpg",
+    logoURL: "img/companies/ctrlbLogo.jpg",
     position: "Senior Software Engineer",
     duration: "April 2024 - Present",
     border: "0.2rem solid #4D5BE9",
