@@ -16,7 +16,7 @@ import PropTypes from "prop-types";
 
 function ExperienceYears() {
   return (
-    <div style={{ height: "100%", padding: "10rem 2rem 3rem 5rem" }}>
+    <div style={{ height: "100%", padding: "5rem 2rem 3rem 5rem" }}>
       <div style={{ fontSize: "4rem", margin: "2rem 0rem" }}>
         More than 3 year as
       </div>
@@ -37,7 +37,7 @@ function ExperienceTimeline() {
   return (
     <Timeline
       position="alternate-reverse"
-      sx={{ height: "100%", paddingTop: "5rem" }}
+      sx={{ height: "100%", paddingTop: "2rem" }}
     >
       <TimelineItem>
         <TimelineOppositeContent sx={{ m: "auto 0" }} variant="body">

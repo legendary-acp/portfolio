@@ -1,67 +1,16 @@
 import PropTypes from "prop-types";
 
 import Header from "../shared/Header";
+import ProjectDetails from "../shared/ProjectDetails";
 
-import { Chip, Paper, Typography, Button, Grid } from "@mui/material";
-import { GitHub } from "@mui/icons-material";
-
-export function ProjectDetails({ project }) {
-  return (
-    <Paper
-      elevation={9}
-      sx={{ padding: "1rem", width: "22vw", height: "70vh" }}
-    >
-      <img src={project.imageUrl} width={"100%"} />
-      <div style={{ display: "flex", flexWrap: "wrap", marginTop: "1rem" }}>
-        {" "}
-        {project.tags.slice(0, 3).map((tag, index) => (
-          <Chip
-            key={index}
-            color="info"
-            sx={{ maxwidth: "30%", margin: "1%" }}
-            label={tag}
-          />
-        ))}
-      </div>
-      <Typography
-        gutterBottom
-        variant="h5"
-        component="div"
-        style={{ margin: "5% 0%" }}
-      >
-        {project.name}
-      </Typography>
-      <Typography
-        variant="body2"
-        color="text.secondary"
-        style={{ margin: "5% 0%" }}
-      >
-        {project.description}
-      </Typography>
-      {project.githubUrl && (
-        <Grid container justifyContent="flex-end">
-          <Grid item>
-            <Button
-              startIcon={<GitHub />}
-              size="small"
-              href={project.githubUrl}
-              target="_blank"
-            >
-              Source Code
-            </Button>
-          </Grid>
-        </Grid>
-      )}
-    </Paper>
-  );
-}
+import { Grid, Hidden } from "@mui/material";
 
 export default function Project({ sectionRef }) {
   const projects = [
     {
       name: "Restaurant Management System",
       description:
-        "Backend project written in go. Can handle tasks related to orders, menue management, table management etc for a restaurant.",
+        "Backend project written in go. Can handle tasks related to orders, menu management, table management etc for a restaurant.",
       imageUrl: "img/projects/restaurant-management-system.png",
       tags: ["Go", "Backend"],
       githubUrl:
@@ -86,7 +35,7 @@ export default function Project({ sectionRef }) {
   ];
 
   return (
-    <div ref={sectionRef} style={{ height: "100vh"}}>
+    <div ref={sectionRef} style={{ height: "100vh" }}>
       <Header title="PROJECTS"></Header>
       <div
         style={{
@@ -95,12 +44,21 @@ export default function Project({ sectionRef }) {
           backgroundColor: "#EBF4F1",
         }}
       >
-        <Grid container spacing={3}>
-          {projects.map((project, index) => (
-            <Grid item key={index}>
-              <ProjectDetails project={project} />
-            </Grid>
-          ))}
+        <Grid container justifyContent="space-between" alignItems="center">
+          {projects.map((project, index) => {
+            const isLastProject = index === projects.length - 1;
+            return (
+              <Grid item key={index}>
+                {isLastProject ? (
+                  <Hidden mdDown>
+                    <ProjectDetails project={project} />
+                  </Hidden>
+                ) : (
+                  <ProjectDetails project={project} />
+                )}
+              </Grid>
+            );
+          })}
         </Grid>
       </div>
     </div>
@@ -109,14 +67,4 @@ export default function Project({ sectionRef }) {
 
 Project.propTypes = {
   sectionRef: PropTypes.object.isRequired,
-};
-
-ProjectDetails.propTypes = {
-  project: PropTypes.shape({
-    name: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-    imageUrl: PropTypes.string.isRequired,
-    tags: PropTypes.arrayOf(PropTypes.string).isRequired,
-    githubUrl: PropTypes.string.isRequired,
-  }).isRequired,
 };
