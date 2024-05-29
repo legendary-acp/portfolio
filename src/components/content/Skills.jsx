@@ -6,10 +6,10 @@ import PropTypes from "prop-types";
 
 export default function Skills({ sectionRef }) {
   return (
-    <div ref={sectionRef} style={{ width:'100%', height:'100vh', backgroundColor:'#FFFAE6' }}>
+    <div ref={sectionRef} style={{ width:'100%', height:'100vh', backgroundColor:'#EBF4F1' }}>
       <Header title="SKILLS"/>
         <Paper elevation={8} sx={{margin:'2rem'}}>    
-        <Typography sx={{ paddingLeft:'2rem', paddingTop:'2rem' , backgroundColor:'#FF9F66', color:'#FFFAE6'}} variant="h3">Languages</Typography>
+        <Typography sx={{ paddingLeft:'2rem', paddingTop:'2rem' , backgroundColor:'#B2D85F', fontFamily:'"Gill Sans Extrabold"'}} variant="h3">LANGUAGES</Typography>
           <ImageList variant="masonry" cols={5} sx={{ padding: '2rem' }}>
               {languageImg.map((lang) => (
                 <ImageListItem key={lang.img}>
@@ -25,7 +25,7 @@ export default function Skills({ sectionRef }) {
             </ImageList>
         </Paper>
         <Paper elevation={8} sx={{margin:'2rem'}}>    
-        <Typography sx={{ paddingLeft:'2rem', paddingTop:'2rem' , backgroundColor:'#FF9F66', color:'#FFFAE6'}} variant="h3">Tools</Typography>
+        <Typography sx={{ paddingLeft:'2rem', paddingTop:'2rem' , backgroundColor:'#B2D85F', fontFamily:'"Gill Sans Extrabold"'}} variant="h3">TOOLS</Typography>
           <ImageList variant="masonry" cols={7} sx={{ padding: '2rem' }}>
               {toolsImg.map((tool) => (
                 <ImageListItem key={tool.img}>

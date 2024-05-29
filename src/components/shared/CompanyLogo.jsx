@@ -17,8 +17,8 @@ export const CompanyLogo = ({ src }) => {
       <Avatar
         src={src}
         sx={{
-          width: { sm: "2vw", xs: "2vw", md: "2vw", lg: "3vw" },
-          height: { sm: "2vw", xs: "2vw", md: "2vw", lg: "3vw" },
+          width: { sm: "8vw", xs: "8vw", md: "8vw", lg: "6vw" },
+          height: { sm: "8vw", xs: "8vw", md: "8vw", lg: "6vw" },
         }}
       />
     </Box>

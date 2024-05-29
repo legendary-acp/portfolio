@@ -19,10 +19,10 @@ export default function RoundImage({ src }) {
           width: { sm: "5vw", xs: "5vw", md: "5vw", lg: "10vw" },
           height: { sm: "5vw", xs: "5vw", md: "5vw", lg: "10vw" },
           border: {
-            sm: "3px solid #FFFAE6",
-            xs: "3px solid #FFFAE6",
-            md: "3px solid #FFFAE6",
-            lg: "5px solid #FFFAE6",
+            sm: "3px solid #EBF4F1",
+            xs: "3px solid #EBF4F1",
+            md: "3px solid #EBF4F1",
+            lg: "5px solid #EBF4F1",
           },
         }}
       />

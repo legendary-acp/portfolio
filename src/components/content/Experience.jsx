@@ -7,7 +7,7 @@ import {
   TimelineOppositeContent,
   TimelineDot,
 } from "@mui/lab";
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Grid, Typography, Hidden } from "@mui/material";
 
 import { CompanyLogo } from "../shared/CompanyLogo";
 import Header from "../shared/Header";
@@ -46,7 +46,10 @@ function ExperienceTimeline() {
         <TimelineSeparator>
           <TimelineConnector />
           <TimelineDot
-            sx={{ backgroundColor: "#FFFAE6", border: `${companies[0].border}` }}
+            sx={{
+              backgroundColor: "#EBF4F1",
+              border: `${companies[0].border}`,
+            }}
           >
             <CompanyLogo src={companies[2].logoURL} />
           </TimelineDot>
@@ -66,7 +69,10 @@ function ExperienceTimeline() {
         <TimelineSeparator>
           <TimelineConnector />
           <TimelineDot
-            sx={{ backgroundColor: "#FFFAE6", border: `${companies[1].border}` }}
+            sx={{
+              backgroundColor: "#EBF4F1",
+              border: `${companies[1].border}`,
+            }}
           >
             <CompanyLogo src={companies[1].logoURL} />
           </TimelineDot>
@@ -85,7 +91,10 @@ function ExperienceTimeline() {
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot
-            sx={{ backgroundColor: "#FFFAE6", border: `${companies[2].border}` }}
+            sx={{
+              backgroundColor: "#EBF4F1",
+              border: `${companies[2].border}`,
+            }}
           >
             <CompanyLogo src={companies[0].logoURL} />
           </TimelineDot>
@@ -102,14 +111,16 @@ function ExperienceTimeline() {
 }
 export default function Experience({ sectionRef }) {
   return (
-    <div ref={sectionRef} style={{ height: "100vh"}}>
+    <div ref={sectionRef} style={{ height: "100vh" }}>
       <Header title="EXPERIENCE" />
-      <Box sx={{ height: "90vh", backgroundColor:'#FFFAE6' }}>
+      <Box sx={{ height: "90vh", backgroundColor: "#EBF4F1" }}>
         <Grid container>
-          <Grid xs={6}>
-            <ExperienceYears />
-          </Grid>
-          <Grid xs={6}>
+          <Hidden mdDown>
+            <Grid item xs={6}>
+              <ExperienceYears />
+            </Grid>
+          </Hidden>
+          <Grid item xs={12} sm={12} md={6}>
             <ExperienceTimeline />
           </Grid>
         </Grid>

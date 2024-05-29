@@ -19,7 +19,7 @@ function SideNav({ menuItems }) {
   return (
     <div
       style={{
-        backgroundColor: "#FF5F00",
+        backgroundColor: "#D7E8E3",
         height: "100vh",
         color: "#000",
         boxShadow: "5px 5px 10px rgba(225,225,225,5)",
@@ -33,15 +33,11 @@ function SideNav({ menuItems }) {
             <ListItemButton
               sx={{
                 "& .MuiListItemIcon-root": {
-                  color: "#FFFAE6",
-                },
-                color: "#FFFAE6",
-                "&:hover": {
-                  backgroundColor: "#FFFAE6",
                   color: "#000000",
-                  "& .MuiListItemIcon-root": {
-                    color: "#000000",
-                  },
+                },
+                color: "#000000",
+                "&:hover": {
+                  backgroundColor: "#B2D85F",
                 },
               }}
               onClick={() => handleClick(item.section)}

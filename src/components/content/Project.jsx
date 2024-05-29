@@ -92,7 +92,7 @@ export default function Project({ sectionRef }) {
         style={{
           height: "90vh",
           padding: "1rem 3rem",
-          backgroundColor: "#FFFAE6",
+          backgroundColor: "#EBF4F1",
         }}
       >
         <Grid container spacing={3}>

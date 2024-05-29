@@ -16,7 +16,7 @@ export default function Introduction({ sectionRef }) {
             md: "5rem 8rem",
             lg: "5rem 8rem",
           },
-          background: "#FFFAE6",
+          background: "#EBF4F1",
           color: "#151515",
         }}
       >
