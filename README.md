@@ -40,7 +40,7 @@ To run this project locally, follow these steps:
 5. Open your browser and visit [http://localhost:5173](http://localhost:5173) to see the website in action.
 
 ## License
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/legendary-acp/portfolio/blob/main/LICENSE.md) file for details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/legendary-acp/portfolio/blob/main/LICENSE) file for details.
 
 ## Contact
 Feel free to reach out if you have any questions or just want to connect:
