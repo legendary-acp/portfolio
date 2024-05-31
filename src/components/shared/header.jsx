@@ -4,11 +4,12 @@ import { Box } from "@mui/material";
 export default function Header({ title }) {
   return (
     <Box
-      style={{
-        height: { xs: "10vh", sm: "10vh", md: "10vh", lg: "10vh" },
+      sx={{
+        height: "10vh",
         backgroundColor: "#D7E8E3",
-        padding: "2rem 2rem",
-        fontSize: { xs: "2.5rem", sm: "3.5rem", md: "520rem", lg: "510rem" },
+        paddingTop: "3vh",
+        paddingLeft: "3vw",
+        fontSize: { xs: "10vw", sm: "10vw", md: "5vw", lg: "5vw" },
         fontFamily: '"Gill Sans Extrabold"',
       }}
     >

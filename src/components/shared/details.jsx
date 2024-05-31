@@ -25,16 +25,40 @@ export function DetailsLeft(prop) {
 
 function Details(prop) {
   return (
-    <Card sx={{ maxWidth: 400 }}>
+    <Card
+      sx={{
+        width: "30vw",
+      }}
+    >
       <CardActionArea>
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography
+            gutterBottom
+            variant="h5"
+            component="div"
+            sx={{
+              fontSize: "2vw",
+            }}
+          >
             {prop.institute}
           </Typography>
-          <Typography variant="body1" color={"#3d4c5e"}>
+          <Typography
+            variant="body1"
+            color={"#3d4c5e"}
+            sx={{
+              fontSize: "1.2vw",
+              fontStyle: "italic",
+            }}
+          >
             {prop.year}
           </Typography>
-          <Typography variant="body2" color="text.secondary">
+          <Typography
+            variant="body2"
+            color="text.secondary"
+            sx={{
+              fontSize: "1.5vw",
+            }}
+          >
             {prop.description}
           </Typography>
         </CardContent>

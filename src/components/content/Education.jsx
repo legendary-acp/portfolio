@@ -17,7 +17,7 @@ export default function Education({ sectionRef }) {
   return (
     <div ref={sectionRef} style={{ height: "100vh" , backgroundColor:'#EBF4F1'}}>
       <Header title="EDUCATION" />
-      <div style={{ padding: "5rem 0rem 0rem 0rem"}}>
+      <div style={{ paddingTop: "2rem"}}>
         <Timeline position="alternate">
           <TimelineItem>
             <TimelineSeparator>

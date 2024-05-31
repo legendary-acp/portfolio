@@ -9,9 +9,8 @@ export default function ProjectDetails({ project }) {
       elevation={9}
       sx={{
         padding: "1rem",
-        width: { xs: "32vw", sm: "32vw", md: "22vw", lg: "22vw" },
-        height: { xs: "70vh", sm: "55vh", md: "60vh", lg: "70vh" },
-        fontSize: { xs: "2.5rem", sm: "3.5rem", md: "5rem", lg: "5rem" },
+        width: { xs: "20vw", sm: "30vw", md: "22vw", lg: "22vw" },
+        height: { xs: "65vh", sm: "65vh", md: "70vh", lg: "75vh" },
       }}
     >
       <Box
@@ -19,8 +18,8 @@ export default function ProjectDetails({ project }) {
         src={project.imageUrl}
         sx={{
           width: {
-            xs: "22vw", // Small screens (mobile devices)
-            sm: "33vw", // Medium screens (tablets)
+            xs: "25vw", // Small screens (mobile devices)
+            sm: "30vw", // Medium screens (tablets)
             md: "22vw", // Large screens (desktops)
             lg: "22vw", // Larger screens
             xl: "22vw", // Extra large screens
@@ -35,7 +34,7 @@ export default function ProjectDetails({ project }) {
           <Chip
             key={index}
             color="info"
-            sx={{ maxwidth: "30%", margin: "0 0.4rem" }}
+            sx={{ maxwidth: "30%", margin: "0.5rem 0.5rem" }}
             label={tag}
           />
         ))}
@@ -44,11 +43,16 @@ export default function ProjectDetails({ project }) {
         gutterBottom
         variant="h5"
         component="div"
-        style={{ marginTop: "1.5rem" }}
+        sx={{
+          marginTop: "1rem",
+          fontSize: { xs: "1rem", sm: "2rem", md: "2rem", lg: "1.7rem" },
+        }}
       >
         {project.name}
       </Typography>
-      <Typography variant="body2" color="text.secondary">
+      <Typography variant="body2" color="text.secondary" sx={{
+        fontSize: { xs: "0.8rem", sm: "1rem", md: "1rem", lg: "1.1rem" },
+      }}>
         {project.description}
       </Typography>
       {project.githubUrl && (
