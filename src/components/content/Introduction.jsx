@@ -40,7 +40,7 @@ export default function Introduction({ sectionRef }) {
           Proficient in{"\u00A0"}
           <Typewriter
             options={{
-              strings: ["Observability", "Golang", "Python", "Cloud"],
+              strings: ["Observability", "Golang", "Python", "Cloud", "Big Data"],
               autoStart: true,
               loop: true,
             }}
