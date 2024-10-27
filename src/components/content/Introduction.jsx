@@ -1,7 +1,6 @@
 import { Box, Avatar } from "@mui/material";
 import Typewriter from "typewriter-effect";
-import { GitHub, InsertDriveFile, LinkedIn } from "@mui/icons-material";
-
+import { GitHub, InsertDriveFile, LinkedIn, CreateIcon } from "@mui/icons-material";
 import PropTypes from "prop-types";
 
 export default function Introduction({ sectionRef }) {
@@ -80,12 +79,19 @@ export default function Introduction({ sectionRef }) {
               <GitHub />{" "}
             </Avatar>{" "}
           </a>
+          <a href="https://medium.com/debugging-diaries" target="_blank">
+            <Avatar sx={{ margin: "0.5rem", background: "#000" }}>
+              {" "}
+              <CreateIcon />{" "}
+            </Avatar>{" "}
+          </a>
           <a href="Resume.pdf" target="_blank">
             <Avatar sx={{ margin: "0.5rem", background: "#008080" }}>
               {" "}
               <InsertDriveFile />{" "}
             </Avatar>{" "}
           </a>
+          
         </Box>
       </Box>
     </div>
