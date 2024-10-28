@@ -136,7 +136,7 @@ Experience.propTypes = {
 const companies = [
   {
     name: "Gap Inc",
-    logoURL: "img/companies/gapLogo.png",
+    logoURL: "/img/companies/gapLogo.png",
     position: "Software Engineer",
     duration: "June 2021 - Sept 2023",
     border: "0.2rem solid #15B19A",
@@ -144,7 +144,7 @@ const companies = [
   },
   {
     name: "Middleware",
-    logoURL: "img/companies/middlewareLogo.png",
+    logoURL: "/img/companies/middlewareLogo.png",
     position: "Senior Software Engineer",
     duration: "Sept 2023 - Feb 2024",
     border: "0.2rem solid #f05c5c",
@@ -152,7 +152,7 @@ const companies = [
   },
   {
     name: "CtrlB",
-    logoURL: "img/companies/ctrlbLogo.png",
+    logoURL: "/img/companies/ctrlbLogo.png",
     position: "Senior Software Engineer",
     duration: "April 2024 - Present",
     border: "0.2rem solid #000000",

@@ -25,7 +25,7 @@ function SideNav({ menuItems }) {
         boxShadow: "5px 5px 10px rgba(225,225,225,5)",
       }}
     >
-      <RoundImage src={"img/profile.jpg"} />
+      <RoundImage src={"/img/profile.jpg"} />
       <Divider />
       <List sx={{ display: "flex", flexDirection: "column" }}>
         {menuItems.map((item) => (

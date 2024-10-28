@@ -82,54 +82,54 @@ export default function Skills({ sectionRef }) {
 
 const languageImg = [
   {
-    img: "img/lang/go.png",
+    img: "/img/lang/go.png",
     name: "Go Lang",
   },
   {
-    img: "img/lang/python.png",
+    img: "/img/lang/python.png",
     name: "Python",
   },
   {
-    img: "img/lang/javascript.png",
+    img: "/img/lang/javascript.png",
     name: "JavaScript",
   },
   {
-    img: "img/lang/html.png",
+    img: "/img/lang/html.png",
     name: "HTML",
   },
   {
-    img: "img/lang/c++.png",
+    img: "/img/lang/c++.png",
     name: "C++",
   },
 ];
 
 const toolsImg = [
   {
-    img: "img/tools/linux.png",
+    img: "/img/tools/linux.png",
     name: "Linux",
   },
   {
-    img: "img/tools/aws.webp",
+    img: "/img/tools/aws.webp",
     name: "AWS",
   },
   {
-    img: "img/tools/azure.webp",
+    img: "/img/tools/azure.webp",
     name: "Azure",
   },
   {
-    img: "img/tools/otel.png",
+    img: "/img/tools/otel.png",
     name: "OpenTelemetry",
   },
   {
-    img: "img/tools/kubernetes.webp",
+    img: "/img/tools/kubernetes.webp",
     name: "Kubernetes",
   },
   {
-    img: "img/tools/docker.png",
+    img: "/img/tools/docker.png",
     name: "Docker",
   },
   {
-    img: "img/tools/git.png",
+    img: "/img/tools/git.png",
     name: "Git",
   },
 ];

@@ -11,7 +11,7 @@ export default function Project({ sectionRef }) {
       name: "Restaurant Management System",
       description:
         "Backend project written in go. Can handle tasks related to orders, menu management, table management etc for a restaurant.",
-      imageUrl: "img/projects/restaurant-management-system.png",
+      imageUrl: "/img/projects/restaurant-management-system.png",
       tags: ["Go", "Backend"],
       githubUrl:
         "https://github.com/legendary-acp/restaurant-management-system/",
@@ -20,7 +20,7 @@ export default function Project({ sectionRef }) {
       name: "Kubernetes Monitoring Agent",
       description:
         "Redesigned Kuberenetes agent for middleware including new deployment which increased scope of what can be done through this agent.",
-      imageUrl: "img/projects/kuberenetes-agent.png",
+      imageUrl: "/img/projects/kuberenetes-agent.png",
       tags: ["Kubernetes", "Helm"],
       githubUrl: "https://github.com/middleware-labs/mw-agent",
     },
@@ -28,7 +28,7 @@ export default function Project({ sectionRef }) {
       name: "RHEL -> OEL migration",
       description:
         "Executed comprehensive testing and validation procedures to mitigate potential risks, resulting in a seamless transition without compromising system stability or performance",
-      imageUrl: "img/projects/rhel_to_oel.png",
+      imageUrl: "/img/projects/rhel_to_oel.png",
       tags: ["Linux", "RHEL", "OEL"],
       githubUrl: "",
     },
