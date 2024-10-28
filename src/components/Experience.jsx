@@ -9,8 +9,8 @@ import {
 } from "@mui/lab";
 import { Box, Grid, Typography, Hidden } from "@mui/material";
 
-import { CompanyLogo } from "../shared/CompanyLogo";
-import Header from "../shared/Header";
+import { CompanyLogo } from "./shared/CompanyLogo";
+import Header from "./shared/Header";
 
 import PropTypes from "prop-types";
 

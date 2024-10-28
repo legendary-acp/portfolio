@@ -2,12 +2,12 @@ import Box from "@mui/material/Box";
 
 import PropTypes from "prop-types";
 
-import Introduction from "./content/Introduction";
-import Contact from "./content/Contact";
-import Education from "./content/Education";
-import Experience from "./content/Experience";
-import Skills from "./content/Skills";
-import Project from "./content/Project";
+import Introduction from "./Introduction";
+import Contact from "./Contact";
+import Education from "./Education";
+import Experience from "./Experience";
+import Skills from "./Skills";
+import Project from "./Project";
 
 export default function Main({ menuItems }) {
   return (

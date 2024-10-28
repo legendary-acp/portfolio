@@ -6,7 +6,7 @@ import {
   Box,
 } from "@mui/material";
 
-import Header from "../shared/Header";
+import Header from "./shared/Header";
 
 import PropTypes from "prop-types";
 

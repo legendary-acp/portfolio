@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
-import Header from "../shared/Header";
-import ProjectDetails from "../shared/ProjectDetails";
+import Header from "./shared/Header";
+import ProjectDetails from "./shared/ProjectDetails";
 
 import { Grid, Hidden } from "@mui/material";
 
