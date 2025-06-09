@@ -39,7 +39,13 @@ export default function Introduction({ sectionRef }) {
           Proficient in{"\u00A0"}
           <Typewriter
             options={{
-              strings: ["Observability", "Golang", "Python", "Cloud", "Big Data"],
+              strings: [
+                "Observability",
+                "Golang",
+                "Rust",
+                "Distributed Systems",
+                "Big Data",
+              ],
               autoStart: true,
               loop: true,
             }}
@@ -51,13 +57,14 @@ export default function Introduction({ sectionRef }) {
             padding: "2rem 0rem",
           }}
         >
-          A skilled Software Engineer currently working at CtrlB and building
-          the next-gen observability solution. I excel in Observability and
-          infrastructure optimization, with expertise in Golang, Python, and
-          Kubernetes. I have demonstrated leadership in pivotal projects like
-          OpenTelemetry implementation and successful migrations. My skills are
-          honed in enhancing Kubernetes monitoring agent architecture and
-          integrating novel deployment strategies.
+          Software Engineer at CtrlB, building next-gen observability and
+          security solutions. I specialize in observability, infrastructure
+          optimization, and distributed systems, with deep expertise in Golang,
+          Python, Kubernetes, and Rust. Led key projects including a scalable
+          OpenTelemetry control plane (CTRLTower), Kubernetes monitoring agent
+          enhancements, and eBPF-based runtime security tooling (Falco-lite-rs).
+          Strong background in backend engineering, system internals, and
+          delivering reliable, high-performance platforms.
         </Box>
         <Box
           sx={{
@@ -91,7 +98,6 @@ export default function Introduction({ sectionRef }) {
               <InsertDriveFile />{" "}
             </Avatar>{" "}
           </a>
-          
         </Box>
       </Box>
     </div>

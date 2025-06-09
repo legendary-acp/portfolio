@@ -31,7 +31,7 @@ export default function Skills({ sectionRef }) {
         </Typography>
         <ImageList
           variant="masonry"
-          cols={5}
+          cols={6}
           sx={{ display: "block", padding: "2rem" }}
         >
           {languageImg.map((lang) => (
@@ -48,7 +48,7 @@ export default function Skills({ sectionRef }) {
           ))}
         </ImageList>
       </Paper>
-      <Paper elevation={8} sx={{ margin: "2rem" }}>
+      <Paper elevation={9} sx={{ margin: "2rem" }}>
         <Typography
           sx={{
             padding: "1rem",
@@ -86,6 +86,14 @@ const languageImg = [
     name: "Go Lang",
   },
   {
+    img: "/img/lang/rust.png",
+    name: "Rust",
+  },
+  {
+    img: "/img/lang/c++.png",
+    name: "C++",
+  },
+  {
     img: "/img/lang/python.png",
     name: "Python",
   },
@@ -96,10 +104,6 @@ const languageImg = [
   {
     img: "/img/lang/html.png",
     name: "HTML",
-  },
-  {
-    img: "/img/lang/c++.png",
-    name: "C++",
   },
 ];
 
@@ -117,16 +121,16 @@ const toolsImg = [
     name: "Azure",
   },
   {
+    img: "/img/tools/gcp.png",
+    name: "GCP",
+  },
+  {
     img: "/img/tools/otel.png",
     name: "OpenTelemetry",
   },
   {
     img: "/img/tools/kubernetes.webp",
     name: "Kubernetes",
-  },
-  {
-    img: "/img/tools/docker.png",
-    name: "Docker",
   },
   {
     img: "/img/tools/git.png",
